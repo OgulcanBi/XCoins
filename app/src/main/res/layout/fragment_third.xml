@@ -13,7 +13,7 @@
             android:id="@+id/onBoardImage"
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:background="@mipmap/ic_onboard_first"
+            android:background="@mipmap/ic_onboard_third"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

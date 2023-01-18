@@ -3,22 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/firstFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/firstFragment"
         android:name="com.definex.navigationcomponent.FirstFragment"
         android:label="fragment_first"
         tools:layout="@layout/fragment_first" >
-        <action
-            android:id="@+id/action_firstFragment_to_secondFragment"
-            app:destination="@id/secondFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim">
-            <argument
-                android:name="number"
-                android:defaultValue="2" />
-        </action>
         <argument android:name="number"
             app:argType="integer" />
     </fragment>
@@ -27,11 +18,6 @@
         android:name="com.definex.navigationcomponent.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" >
-        <action
-            android:id="@+id/action_secondFragment_to_firstFragment"
-            app:destination="@id/firstFragment"
-            app:exitAnim="@android:anim/fade_out"
-            app:enterAnim="@android:anim/fade_in" />
         <argument android:name="number"
             app:argType="integer" />
 
@@ -39,4 +25,22 @@
     <argument
         android:name="number"
         android:defaultValue="1" />
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.definex.navigationcomponent.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.definex.navigationcomponent.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_wealthFragment"
+            app:destination="@id/wealthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wealthFragment"
+        android:name="com.definex.navigationcomponent.WealthFragment"
+        android:label="WealthFragment" />
 </navigation>

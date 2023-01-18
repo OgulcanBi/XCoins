@@ -21,9 +21,9 @@ class SecondFragment :BaseFragment<FragmentSecondBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 //        Toast.makeText(activity,args.toString(),Toast.LENGTH_LONG).show()
-        binding?.tvSecond?.setOnClickListener {
-            findNavController().navigate(SecondFragmentDirections.actionSecondFragmentToFirstFragment(22))
-        }
+//        binding?.tvSecond?.setOnClickListener {
+//            findNavController().navigate(SecondFragmentDirections.actionSecondFragmentToFirstFragment(22))
+//        }
     }
 
 

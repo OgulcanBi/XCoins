@@ -14,14 +14,14 @@ import com.definex.navigationcomponent.databinding.FragmentFirstBinding
 class FirstFragment : BaseFragment<FragmentFirstBinding>() {
 
     override fun getLayoutId(): Int = R.layout.fragment_first
-    private val args :FirstFragmentArgs by navArgs()
+//    private val args :FirstFragmentArgs by navArgs()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Toast.makeText(activity,args.toString(),Toast.LENGTH_LONG).show()
-        binding?.tvFirst?.setOnClickListener {
-            findNavController().navigate(FirstFragmentDirections.actionFirstFragmentToSecondFragment(11))
-        }
+//        Toast.makeText(activity,args.toString(),Toast.LENGTH_LONG).show()
+//        binding?.tvFirst?.setOnClickListener {
+//            findNavController().navigate(FirstFragmentDirections.actionFirstFragmentToSecondFragment(11))
+//        }
     }
 
 

@@ -4,4 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="firstfragment">FirstFragment</string>
     <string name="secondfragmentmenu">secondFragmentMenu</string>
+    <string name="settings">Settings</string>
+    <string name="wealth">Wealth</string>
+    <string name="home">Home</string>
 </resources>
