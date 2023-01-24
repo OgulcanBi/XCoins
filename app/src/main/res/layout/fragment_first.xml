@@ -43,6 +43,18 @@
             android:gravity="center"
             android:text="Creating an automated system for Letter of Credit Advising Bank processes increased income and saved substantial time"/>
 
+        <TextView
+            android:id="@+id/textViewShareAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"
+            style="@style/DefinexPrimaryButtonStyle"
+            android:text="SHARE ADDRESS"/>
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

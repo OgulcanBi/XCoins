@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:context=".HomeDashboardFragment">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_card_background"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_20_dp"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        style="@style/ThinItalicTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_24_dp"
+                        android:text="@string/welcome_user" />
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        style="@style/BoldWhiteTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_8_dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/welcome_card_desc" />
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        style="@style/ThinItalicTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_24_dp"
+                        android:background="@drawable/blue_card_background"
+                        android:backgroundTint="@color/secondaryBackgroundColor"
+                        android:gravity="center"
+                        android:paddingHorizontal="@dimen/margin_12_dp"
+                        android:text="@string/invest_today"
+                        android:textColor="@color/definexBlueColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/trendingCoins"
+                    style="@style/TitleTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_32_dp"
+                    android:text="@string/welcome_card_desc" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/cryptoRecyclerViewAdapter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/crypto_list_row_layout"
+                    android:layout_marginTop="@dimen/padding_16_dp" />
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

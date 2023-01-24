@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rewards_navigation"
+    app:startDestination="@id/rewardsDashboarFragment2">
+
+    <fragment
+        android:id="@+id/rewardsDashboarFragment2"
+        android:name="com.definex.navigationcomponent.RewardsDashboarFragment"
+        android:label="fragment_rewards_dashboard"
+        tools:layout="@layout/fragment_rewards_dashboard" />
+</navigation>

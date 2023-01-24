@@ -14,17 +14,5 @@ import com.definex.navigationcomponent.databinding.FragmentSecondBinding
 
 
 class SecondFragment :BaseFragment<FragmentSecondBinding>() {
-
-    private val args :SecondFragmentArgs by navArgs()
     override fun getLayoutId(): Int = R.layout.fragment_second
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-//        Toast.makeText(activity,args.toString(),Toast.LENGTH_LONG).show()
-//        binding?.tvSecond?.setOnClickListener {
-//            findNavController().navigate(SecondFragmentDirections.actionSecondFragmentToFirstFragment(22))
-//        }
-    }
-
-
 }

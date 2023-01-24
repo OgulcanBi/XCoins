@@ -18,10 +18,10 @@ class FirstFragment : BaseFragment<FragmentFirstBinding>() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-//        Toast.makeText(activity,args.toString(),Toast.LENGTH_LONG).show()
-//        binding?.tvFirst?.setOnClickListener {
-//            findNavController().navigate(FirstFragmentDirections.actionFirstFragmentToSecondFragment(11))
-//        }
+        binding?.textViewShareAddress?.setOnClickListener {
+            findNavController().navigate(FirstFragmentDirections.actionFirstFragmentToSettingsFragment())
+        }
+
     }
 
 

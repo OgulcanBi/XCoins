@@ -16,6 +16,8 @@ abstract class BaseFragment<VDB : ViewDataBinding> : Fragment() {
     protected val binding get() = _binding
     protected abstract fun getLayoutId():Int
 
+    protected open var bottomNavigationViewVisibility = View.VISIBLE
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -25,7 +27,24 @@ abstract class BaseFragment<VDB : ViewDataBinding> : Fragment() {
             container,
             false
         )
+        requireActivity().window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_VISIBLE
         return binding?.root
+    }
+
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        // get the reference of the parent activity and call the setBottomNavigationVisibility method.
+        if (activity is MainActivity) {
+            val mainActivity = activity as MainActivity
+            mainActivity.setBottomNavigationVisibility(bottomNavigationViewVisibility)
+        }
+    }
+    override fun onResume() {
+        super.onResume()
+        if (activity is MainActivity) {
+            (activity as MainActivity).setBottomNavigationVisibility(bottomNavigationViewVisibility)
+        }
     }
 
 }

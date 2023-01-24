@@ -2,18 +2,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/firstFragment"
-        android:icon="@drawable/ic_baseline_home_24"
+        android:id="@+id/home_navigation"
+        android:icon="@drawable/home"
         android:title="@string/home" />
 
     <item
-        android:id="@+id/secondFragment"
-        android:icon="@drawable/ic_baseline_attach_money_24"
-        android:title="@string/wealth" />
+        android:id="@+id/portfolio_navigation"
+        android:icon="@drawable/portfolio"
+        android:title="@string/portfolio" />
 
     <item
-        android:id="@+id/thirdFragment"
-        android:icon="@drawable/ic_baseline_settings_24"
-        android:title="@string/settings" />
+        android:id="@+id/rewards_navigation"
+        android:icon="@drawable/rewards"
+        android:title="@string/rewards" />
+    <item
+        android:id="@+id/market_navigation"
+        android:icon="@drawable/market"
+        android:title="@string/market" />
+    <item
+        android:id="@+id/profile_navigation"
+        android:icon="@drawable/profile"
+        android:title="@string/profile" />
 
 </menu>

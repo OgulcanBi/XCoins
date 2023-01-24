@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/portfolio_navigation"
+    app:startDestination="@id/portfolioDashboarFragment">
+
+    <fragment
+        android:id="@+id/portfolioDashboarFragment"
+        android:name="com.definex.navigationcomponent.PortfolioDashboardFragment"
+        tools:layout="@layout/fragment_portfolio_dashboard"
+        android:label="fragment_portfolio_dashboar">
+        <action
+            android:id="@+id/action_portfolioDashboarFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.definex.navigationcomponent.SecondFragment"
+        tools:layout="@layout/fragment_second"
+        android:label="fragment_second">
+        <argument
+            android:name="number"
+            app:argType="integer" />
+
+    </fragment>
+</navigation>
